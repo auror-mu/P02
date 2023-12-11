@@ -76,11 +76,7 @@
   <div class="grid">
 
       <button class="toggle-btn" data-target="content-filters">Filtres</button>
-
-
       <button class="toggle-btn" data-target="content-salles">Salles</button>
-
-
       <button class="toggle-btn" data-target="content-params">Params</button>
 
   </div>
@@ -91,9 +87,8 @@
       Filters content goes here...
     </div>
 
-
     <div id="content-salles" class="toggle-content" style="display: none;">
-      Salles
+      Salles <canvas id="myChart" width="960" height="200"></canvas>
     </div>
 
 
@@ -104,3 +99,4 @@
 </div>
 
 <%= javascript_include_tag "toggle_buttons" %>
+<%= javascript_include_tag 'chart' %>
