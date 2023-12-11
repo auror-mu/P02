@@ -23,10 +23,6 @@ class MeasuresController < ApplicationController
 
     grouped_data = all_rooms_data.group_by { |data| data[:room_id] }
 
-    # Now you can process the data further, organize it, and prepare it for Chart.js
-
-    # For simplicity, let's assume you've organized the data into 'labels' and 'datasets'
-
     @labels = grouped_data.keys
     @datasets = []
 
